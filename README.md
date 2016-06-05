@@ -5,7 +5,7 @@ This is a simple Java binding for `wkhtmltopdf` which provides a class with a si
 ## Sample usage
 ```
 WKHtmlToPdf wkhtmltopdf = new WKHtmlToPdf();
-wkhtmltopdf.convert("<html><body>Hello Native World!</body></html>");
+wkhtmltopdf.convert("<html><body>Hello Native World!</body></html>", "./test.pdf");
 ```
 
 ## Compilation
