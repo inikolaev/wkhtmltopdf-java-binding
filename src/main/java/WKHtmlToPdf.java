@@ -8,10 +8,10 @@
 public class WKHtmlToPdf {
     static { System.loadLibrary("WKHtmlToPdfJavaBinding"); }
 
-    public native void convert(String path);
+    public native void convert(String html, String path);
 
     public static void main(String[] args) {
         WKHtmlToPdf wkHtmlToPdf = new WKHtmlToPdf();
-        wkHtmlToPdf.convert("<html><body><h1>Hello Native World!</h1></body></html>");
+        wkHtmlToPdf.convert("<html><body><h1>Hello Native World!</h1></body></html>", "./test1.pdf");
     }
 }

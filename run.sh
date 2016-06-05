@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -Djava.library.path=. -cp out/production/wkhtmltopdf-java-binding WKHtmlToPdf
+java -Djava.library.path=./target/lib -cp ./target WKHtmlToPdf

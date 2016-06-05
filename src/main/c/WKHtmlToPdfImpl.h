@@ -10,10 +10,10 @@ extern "C" {
 /*
  * Class:     WKHtmlToPdf
  * Method:    convert
- * Signature: (Ljava/lang/String;)V
+ * Signature: (Ljava/lang/String;Ljava/lang/String;)V
  */
 JNIEXPORT void JNICALL Java_WKHtmlToPdf_convert
-  (JNIEnv *, jobject, jstring);
+  (JNIEnv *, jobject, jstring, jstring);
 
 #ifdef __cplusplus
 }
