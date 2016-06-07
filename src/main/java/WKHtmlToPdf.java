@@ -1,3 +1,5 @@
+package com.github.inikolaev;
+
 /**
  * Created with IntelliJ IDEA.
  * User: inikolaev

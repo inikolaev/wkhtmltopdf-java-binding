@@ -48,7 +48,7 @@ void convert(const char* html, const char* path) {
     wkhtmltopdf_deinit();
 }
 
-JNIEXPORT void JNICALL Java_WKHtmlToPdf_convert(JNIEnv *env, jobject obj, jstring html, jstring path) {
+JNIEXPORT void JNICALL Java_com_github_inikolaev_WKHtmlToPdf_convert(JNIEnv *env, jobject obj, jstring html, jstring path) {
     const char *nativeHtml = (*env)->GetStringUTFChars(env, html, 0);
     const char *nativePath = (*env)->GetStringUTFChars(env, path, 0);
 
