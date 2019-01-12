@@ -11,12 +11,12 @@ wkhtmltopdf.convert("<html><body>Hello Native World!</body></html>", "./test.pdf
 ## Compilation
 In order to compile the library you first need to install `wkhtmltopdf` from http://wkhtmltopdf.org/.
 
-After that just run the following scripts:
+After that just run `make`:
 ```
-./codegen.sh
-./compile.sh
+make
 ```
 
-Later on I will replace this Maven of something more appropriate.
+This command will compile Java classes as well as `wkhtmltopdf` Java bindings 
+and store results in `target/` directory.
 
-If you want to run a quick test execute `./run.sh`. After it's done you should see file named `test.pdf`.
+If you want to run a quick test run `make run`. After it's done you should see file named `test.pdf`.
